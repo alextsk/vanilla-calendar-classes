@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    .container{
+        width: 500px;
+    }
+    .draggable {
+        user-select: none;
+        height:100px;
+        width:100px;
+        background: #cacafa99;
+    }
+
+    .dropzone{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        user-select: none;
+        height:100px;
+        width:100px;
+        background: #4646f9cc;
+        float:right;
+    }
+    .inner{
+        height: 50px;
+        width: 50px;
+        background: #99ff9955;
+    }
+</style>
+<body>
+<div class="container">
+    <div data-drag-role="draggable" class="draggable">
+        ninja
+    </div>
+
+    <div data-drag-role="dropzone" class="dropzone">
+
+        <div class="inner">inner castle</div>
+    </div>
+</div>
+
+<script src="dist/drag-bundle.js">
+
+</script>
+</body>
+</html>
