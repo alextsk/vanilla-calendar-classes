@@ -1,7 +1,9 @@
 module.exports = {
   entry: {
     app:'./app/app.js',
-    drag:'./app/drag_bootstrap'
+    drag:'./app/drag_bootstrap',
+    resize:'./app/resize',
+    carousel:'./app/carousel'
   },
   output: {
     filename: 'dist/[name]-bundle.js'

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    .container {
+        display: flex;
+        width: 700px;
+        padding:30px;
+    }
+    .resize {
+        display: inline-block;
+        height:300px;
+        width:300px;
+        background: #cacafa99;
+    }
+    .resize-right {
+        background: #ff55fa99;
+    }
+</style>
+<body>
+<div class="container">
+  <div class="resize resize-bottom" data-resizeable ="vertical">
+
+  </div>
+  <div class="resize resize-right" data-resizeable="horizontal">
+
+  </div>
+</div>
+
+<script src="dist/resize-bundle.js">
+
+</script>
+</body>
+</html>
